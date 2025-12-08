@@ -1,5 +1,4 @@
 ﻿using System.Globalization;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Dars4
 {
@@ -214,19 +213,295 @@ namespace Dars4
 
         //}
 
+        //1.4.0:15
+        //static bool Hammasikichik(string str)
+        //{
+        //    foreach (char c in str)
+        //    {
+        //        if (!char.IsLower(c))
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
 
-        static bool Hammasikichik(string str)
+        //1.4.0:16
+        //static string Res(string s)
+        //{
+        //    string natja = "";
+        //    foreach (char c in s)
+        //    {
+        //        if (char.IsLower(c))
+        //        {
+        //            natja += char.ToUpper(c);
+        //        }
+        //        else
+        //        {
+        //            natja += c;
+        //        }
+
+        //    }
+        //    return natja;
+        //}
+
+        //1.4.0:17
+        //static int Oksozi(string str)
+
+        //{ 
+        //   int sanoq = 0;
+        //    for (int i = 0; i < str.Length - 1; i++)
+        //    {
+        //        if (str[i] == 'o' && str[i + 1] == 'k')
+        //        {
+        //            sanoq++;
+        //        }
+        //    }
+        //    return sanoq;
+        //} 
+
+        //1.4.0:18
+        //static string Res(string x)
+        //{
+        //    string str = "";
+
+        //    foreach (char c in x)
+        //    {
+        //        if (char.IsLower(c))
+        //        {
+        //            str += "*";
+
+        //        }
+        //        else
+        //        {
+        //            str += c;
+        //        }
+        //    }
+        ////    return str;
+
+
+        //1.4.0:19
+        //static string Res(string x)
+        //{
+        //    string str = "";
+
+        //    foreach (char c in x)
+        //    {
+        //        if (char.IsUpper(c))
+        //        {
+        //            str += char.ToLower(c);
+
+        //        }
+        //        else
+        //        {
+        //            str += c;
+        //        }
+        //    }
+        //    return str;
+
+        //1.4.0:20
+        //static string Res(string x)
+        //{
+        //    string str = "";
+
+        //    foreach (char c in x)
+        //    {
+        //        if (char.IsLower(c))
+        //        {
+        //            str += char.ToUpper(c);
+
+        //        }
+        //        else
+        //        {
+        //            str += c;
+        //        }
+        //    }
+        //    return str;
+        //1.4.0:21
+        //static int Oksozi(string str)
+
+        //{
+        //    int sanoq = 0;
+        //    for (int i = 0; i < str.Length; i++)
+        //    {
+        //        if (str[i] == '@')
+        //        {
+        //            sanoq++;
+        //        }
+        //    }
+        //    return sanoq;
+        //}
+
+
+        // Homework 1.4.1
+
+        //1.4.1:1
+        //static string Res(string s)
+        //{
+        //    return "Hello" + s + "!";
+        //}
+
+        //1.4.1:2
+        //static string Res(string a, string b)
+        //{
+        //    return a + b + b + a;
+        //}
+
+        //1.4.1:3
+        //static string Res(string s, string x)
+        //{
+        //    return "<<" + s + ">>"   +
+
+
+        //        "[[" + x + "]]";
+        //}
+
+        //1.4.1:4
+        //static string Res(string s)
+        //{
+        //    string res=s.Substring(s.Length  - 3);
+        //    return res = res + res + res;
+        //}
+
+        //1.4.1:5
+        //static string Res(string s)
+        //{
+        //    string res = s.Substring(0,2);
+        //    return res;
+        //}
+
+        //1.4.1:6
+        //static string Res(string s)
+        //{
+
+        //    return s.Substring(0, s.Length / 2); 
+        //}
+
+        //1.4.1;7
+        //static string Res(string s)
+        //{
+
+        //    return s.Substring(1, s.Length - 2);
+        //}
+
+        //1.4.1:8
+        //static string Res(string a, string b)
+        //{
+        //    if (a.Length < b.Length)
+        //    {
+        //        return a + b + a; 
+        //    }
+        //    else
+        //    {
+        //        return b + a + b;
+        //    }
+        //}
+
+        //1.4.1;9
+        //static string Res(string s,string z)
+        //{
+
+        //    return s.Substring(1)+z.Substring(1);
+        //}
+
+        //1.4.1:10
+        //static string REss(string s)
+        //{
+        //    if (s.Length <= 2)
+        //    {
+        //        return s;
+        //    }
+        //    return s.Substring(2) + s.Substring(0, 2);
+        //}
+
+        //1.4.1:11
+        //static string Res(string s,bool front)
+        //{
+        //    if (front)
+        //    {
+        //        return s.Substring(0, 1);
+
+        //    }
+        //    else
+        //    {
+        //        return s.Substring(0,s.Length - 1);
+        //    }
+
+        //}
+
+        //1.4.1:12
+        //static string Res(string a, int n)
+        //{
+        //    string res = a.Substring(0, n);
+        //    string res2 = a.Substring(a.Length - n, n);
+        //        return res + res2;
+
+        //}
+
+        //1.4.1:13
+        //static string Res(string s)
+        //{
+        //    int res = s.Length / 2;
+        //    return s.Substring(res - 1, 3);
+        //}
+
+        //1.4.1:14
+        //static string Res(string a, string b)
+        //{
+        //    if (a.Length > 0 && b.Length > 0 && a[a.Length - 1] == b[0])
+        //    {
+        //        return a + b.Substring(1);
+        //    }
+        //    return a + b;
+        //}
+
+        //1.4.1:15
+        //static string Res(string s)
+        //{
+        //    if (s.Length < 2)
+        //    {
+        //        return s;
+
+        //    }
+        //    string boshi=s.Substring(0,s.Length-2);
+        //    char oxirgi = s[s.Length - 1];
+        //    char oxirol = s[s.Length - 2];
+        //    return boshi+oxirgi+oxirol;
+        //}
+
+        static string Res(string s)
         {
-            foreach (char c in str)
+            if (s.StartsWith("red"))
             {
-                if (!char.IsLower(c))
-                {
-                    return false;
-                }
+                return "red";
             }
-            return true;
+            if (s.StartsWith("bule"))
+            {
+                return "blue";
+            }
+            return "";
 
-        }
+        } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -249,8 +524,15 @@ namespace Dars4
 
             Console.WriteLine("string kiriting");
             string a = Console.ReadLine();
+         
 
-            Console.WriteLine(Hammasikichik(a));
+         
+
+          
+
+
+
+            Console.WriteLine(Res(a));
 
 
             //1.4.0:5
@@ -303,8 +585,8 @@ namespace Dars4
             //Console.Write(natija);
 
 
-
         }
+
     }
 }
 
