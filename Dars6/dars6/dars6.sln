@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dars6", "dars6\dars6.csproj", "{664594BA-2121-4553-BBCE-BBCAA4767503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{664594BA-2121-4553-BBCE-BBCAA4767503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664594BA-2121-4553-BBCE-BBCAA4767503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664594BA-2121-4553-BBCE-BBCAA4767503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664594BA-2121-4553-BBCE-BBCAA4767503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF80A433-2117-488E-B8E1-350A91870C83}
+	EndGlobalSection
+EndGlobal
