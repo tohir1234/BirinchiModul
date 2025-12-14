@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace Dars4
+﻿namespace Dars4
 {
     internal class Program
     {
@@ -469,41 +467,218 @@ namespace Dars4
         //    return boshi+oxirgi+oxirol;
         //}
 
-        static string Res(string s)
-        {
-            if (s.StartsWith("red"))
-            {
-                return "red";
-            }
-            if (s.StartsWith("bule"))
-            {
-                return "blue";
-            }
-            return "";
-
-        } 
 
 
+        //1.4.1:16
+        //static string seeColor(string s)
+        //{
+        //    if (s.StartsWith("red"))
+        //    {
+        //        return "red";
+        //    }
+        //    if (s.StartsWith("bule"))
+        //    {
+        //        return "blue";
+        //    }
+        //    return "";
+
+        //} 
+
+        //1.4.1:17
+        //static bool frontAgain(string text)
+        //{
+        //   if (text.Length < 2)
+        //    {
+        //        return false;
+        //    }
+        //    string res = text.Substring(0, 2);
+        //    string res2=text.Substring(text.Length - 2);
+        //    return res==res2;
+
+
+        //}
+
+        //1.4.1:18
+        //static string Mincat(string s, string z)
+        //{
+        //    int LenA = s.Length;
+        //    int LenB = z.Length;
+        //    if (LenA > LenB)
+        //    {
+        //        s = s.Substring(LenA - LenB);
+        //    }
+        //    else
+        //    {
+        //        z = z.Substring(LenB - LenA);
+        //    }
+        //    return s + z;
+        //}
+
+        //1.4.1:19
+        //static string Defront(string str)
+        //{
+        //    string result = "";
+        //    if (str.Length > 0 && str[0] == 'a')
+        //    {
+        //        result += str[0];
+        //    }
+        //    if (str.Length > 1 && str[1] == 'b')
+        //    {
+        //        result += str[1];
+        //    }
+
+        //    if (str.Length > 2)
+        //    {
+        //        result += str.Substring(2);
+        //    }
+        //    return result;
+
+
+        //}
+
+
+        //1.4.1:20
+        //static string Withoutx(string str)
+        //{
+        //    if (str.Length == 0)
+        //    {
+        //        return str;
+        //    }
+
+        //    if (str.StartsWith("x"))
+        //    {
+        //        return str.Substring(0);
+        //    }
+        //    if (str.EndsWith("x"))
+        //    {
+        //        return str.Substring(0,str.Length-1);
+        //    }
+
+        //    return str;
+
+        //}
+
+
+        //1.4.1:21
+        //static string Raqamlarniochi(string str)
+        //{
+        //    string result = "";
+
+        //    foreach(char c in str)
+        //    {
+        //        if (!char.IsDigit(c))
+        //        {
+        //            result += c;
+        //        }
+
+
+        //    }
+        //    return result;
+        //}
 
 
 
+        //1.4.1:22
+        //static string Kattaharflarni(string str)
+        //{
+        //    string result = "";
+
+        //    foreach (char c in str)
+        //    {
+        //        if (!char.IsUpper(c))
+        //        {
+        //            result += c;
+        //        }
 
 
+        //    }
+        //    return result;
+        //}
+
+        //1.4.1:23
+        //static string Kichikharflarni(string str)
+        //{
+        //    string result = "";
+
+        //    foreach (char c in str)
+        //    {
+        //        if (!char.IsLower(c))
+        //        {
+        //            result += c;
+        //        }
 
 
+        //    }
+        //    return result;
+        //}
+
+        //1.4.1:24
+        //static string Kichikharflarni(string str)
+        //{
+        //    string result = "";
+
+        //    foreach (char c in str)
+        //    {
+        //        if (c !='@')
+        //        {
+        //            result += c;
+        //        }
 
 
+        //    }
+        //    return result;
+        //}
+
+        //1.4.1:25
+        //static string Kichikharflarni(string str)
+        //{
+        //    string result = "";
+
+        //    foreach (char c in str)
+        //    {
+        //        if (c != ' ')
+        //        {
+        //            result += c;
+        //        }
 
 
+        //    }
+        //    return result;
+        //}
+
+        // HOMEWORK 1.4.2
+
+        //1.4.2:1
+        //static string NewString(int N1, int N2, string s1, string s2)
+        //{
+        //    string part1 = s1.Substring(0, N1);
+        //    string part2 = s2.Substring(s2.Length - N2);
+
+        //    return part1 + part2;
+        //}
+
+        //1.4.2:2
+        //static string Kichikharflarni(string str,char a)
+        //{
+        //    string result = "";
+
+        //    foreach (char c in str)
+        //    {
+        //        if (c== a)
+        //        {
+        //            result += c;
+        //            result += c;
+
+        //        }
+        //        else
+        //        {
+        //            result += c;
+        //        }
 
 
-
-
-
-
-
-
-
+        //    }
+        //    return result;
+        //}
 
 
 
@@ -522,17 +697,22 @@ namespace Dars4
         static void Main(string[] args)
         {
 
-            Console.WriteLine("string kiriting");
-            string a = Console.ReadLine();
-         
+            Console.Write("Belgi kiriting (C): ");
+            char c= char.Parse(Console.ReadLine());
 
-         
+            Console.Write("Satr kiriting (S): ");
+            string s= Console.ReadLine();
 
-          
+            string natija = Kichikharflarni(s, c);
+
+            Console.WriteLine("Natija: " + natija);
 
 
 
-            Console.WriteLine(Res(a));
+
+
+
+
 
 
             //1.4.0:5
