@@ -109,7 +109,7 @@ internal class Program
 
     static void UpdateId(string oldId, string newId)
     {
-        var index = Ids.IndexOf(oldId); // AE4557789
+        var index = Ids.IndexOf(oldId); 
         if (index != -1)
         {
             Ids[index] = newId;
@@ -118,7 +118,7 @@ internal class Program
 
     static bool ValidateId(string id)
     {
-        if (id.Length != 9) // "AeR4578855"
+        if (id.Length != 9) 
         {
             return false;
         }
