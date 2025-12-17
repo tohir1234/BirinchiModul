@@ -75,7 +75,7 @@ internal class Program
             }
             else
             {
-                Console.WriteLine("Davay");
+                Console.WriteLine("......");
                 break;
             }
 
